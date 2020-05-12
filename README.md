@@ -4,7 +4,7 @@
 
 This simple package was built on top of [@szmarczak/http-timer](https://github.com/szmarczak/http-timer).
 
-Unfortunately, [axios](https://github.com/axios/axios), unlike [got](https://github.com/sindresorhus/got), doesn't have request timings. I'm stuck with axios in some projects, so I did this shim wrapping `http(s)` request method and adding timers to them.
+Unfortunately, [axios](https://github.com/axios/axios), unlike [got](https://github.com/sindresorhus/got), doesn't have request timings. I'm stuck with axios in some projects, so I did this shim wrapping `http[s]` request method and adding timers to them.
 
 ## Install
 
@@ -14,10 +14,12 @@ $ yarn add @tiagonapoli/http-timers-shim
 
 ## Usage
 
-On your application entrypoint add the following (before every import):
+On your application entrypoint add the following:
 
 ```
-import "@tiagonapoli/http-timer-shim"
+import { wrapHttpAndHttps } "@tiagonapoli/http-timer-shim"
+
+wrapHttpAndHttps()
 ```
 
 This package also reexport typings from `@szmarczak/http-timer`:
