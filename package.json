@@ -1,6 +1,6 @@
 {
   "name": "@tiagonapoli/http-timer-shim",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Add timers to your http(s) requests",
   "main": "build/index.js",
   "scripts": {
