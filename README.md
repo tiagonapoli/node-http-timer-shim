@@ -9,7 +9,7 @@ Unfortunately, [axios](https://github.com/axios/axios), unlike [got](https://git
 ## Install
 
 ```sh
-$ yarn add @tiagonapoli/http-timers-shim
+$ yarn add @tiagonapoli/http-timer-shim
 ```
 
 ## Usage
